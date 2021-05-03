@@ -9,97 +9,93 @@ class Login extends StatefulWidget {
 class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.grey[900],
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text(
-          'FlutterFire Auth App',
-        ),
-      ),
-      body: Center(
-        child: Container(
-          child: ListView(
-            children: [
-              Image(
-                image: NetworkImage(
-                  'https://res.cloudinary.com/practicaldev/image/fetch/s--XVka1yi5--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/6rtttgr7xm8m4tc63jhn.png',
-                ),
-              ),
-              Padding(padding: EdgeInsets.all(10)),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Center(
-                  child: SignInButton(
-                    Buttons.GoogleDark,
-                    onPressed: () {},
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.grey[900],
+        body: Center(
+          child: Container(
+            child: ListView(
+              children: [
+                Image(
+                  image: NetworkImage(
+                    'https://res.cloudinary.com/practicaldev/image/fetch/s--XVka1yi5--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/6rtttgr7xm8m4tc63jhn.png',
                   ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Center(
-                  child: SignInButton(
-                    Buttons.GitHub,
-                    onPressed: () {},
+                Padding(padding: EdgeInsets.all(10)),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Center(
+                    child: SignInButton(
+                      Buttons.GoogleDark,
+                      onPressed: () {},
+                    ),
                   ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Center(
-                  child: SignInButton(
-                    Buttons.Microsoft,
-                    onPressed: () {},
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Center(
+                    child: SignInButton(
+                      Buttons.GitHub,
+                      onPressed: () {},
+                    ),
                   ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Center(
-                  child: SignInButton(
-                    Buttons.AppleDark,
-                    onPressed: () {},
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Center(
+                    child: SignInButton(
+                      Buttons.Microsoft,
+                      onPressed: () {},
+                    ),
                   ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Center(
-                  child: SignInButton(
-                    Buttons.LinkedIn,
-                    onPressed: () {},
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Center(
+                    child: SignInButton(
+                      Buttons.AppleDark,
+                      onPressed: () {},
+                    ),
                   ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Center(
-                  child: SignInButton(
-                    Buttons.Twitter,
-                    onPressed: () {},
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Center(
+                    child: SignInButton(
+                      Buttons.LinkedIn,
+                      onPressed: () {},
+                    ),
                   ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Center(
-                  child: SignInButton(
-                    Buttons.Yahoo,
-                    onPressed: () {},
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Center(
+                    child: SignInButton(
+                      Buttons.Twitter,
+                      onPressed: () {},
+                    ),
                   ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Center(
-                  child: SignInButton(
-                    Buttons.FacebookNew,
-                    onPressed: () {},
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Center(
+                    child: SignInButton(
+                      Buttons.Yahoo,
+                      onPressed: () {},
+                    ),
                   ),
                 ),
-              ),
-            ],
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Center(
+                    child: SignInButton(
+                      Buttons.FacebookNew,
+                      onPressed: () {},
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
